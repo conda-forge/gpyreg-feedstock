@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@Bobby-Huggins](https://github.com/Bobby-Huggins/)
 * [@lacerbi](https://github.com/lacerbi/)
 
-
-<!-- dummy commit to enable rerendering -->
-
