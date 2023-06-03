@@ -1,5 +1,5 @@
 {% set name = "gpyreg" %}
-{% set version = "0.9.0" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GPyReg-{{ version }}.tar.gz
-  sha256: c642081e35d1e7e149de1f031033f90db1a1cf21425c48c46c26694dea39b81d
+  sha256: 89410e759fbe0e015fc3416f5e28bd53591815ca96fb3ab66aadc43b1dfb9457
 
 build:
   noarch: python
