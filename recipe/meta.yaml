@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gpyreg-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/GPyReg-{{ version }}.tar.gz
   sha256: c642081e35d1e7e149de1f031033f90db1a1cf21425c48c46c26694dea39b81d
 
 build:
