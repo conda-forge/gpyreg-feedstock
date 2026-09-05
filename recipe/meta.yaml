@@ -1,18 +1,18 @@
 {% set name = "gpyreg" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/GPyReg-{{ version }}.tar.gz
-  sha256: 89410e759fbe0e015fc3416f5e28bd53591815ca96fb3ab66aadc43b1dfb9457
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c01e4ccea812505d50464cc622bc7f40335514250720503bf0998242dc635bb4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
