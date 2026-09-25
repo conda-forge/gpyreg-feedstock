@@ -1,27 +1,29 @@
 {% set name = "gpyreg" %}
-{% set version = "1.0.2" %}
+{% set version = "1.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/GPyReg-{{ version }}.tar.gz
-  sha256: 89410e759fbe0e015fc3416f5e28bd53591815ca96fb3ab66aadc43b1dfb9457
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5de5baec60d061bb0348af7907498ca1f06c5fc1dee96526cbbdc6d543db050d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools-scm
+    - setuptools >=45
+    - setuptools-scm >=6.2
     - pip
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.5.1
+    - numdifftools >=0.9.41
     - numpy >=1.22.1
     - pytest >=6.2.5
     - pytest-rerunfailures >=10.2
