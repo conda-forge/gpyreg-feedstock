@@ -1,13 +1,13 @@
 {% set name = "gpyreg" %}
-{% set version = "1.3.3" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5de5baec60d061bb0348af7907498ca1f06c5fc1dee96526cbbdc6d543db050d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c3d76cbc924dc17f9ad9db30f82d61a9218bdd1d418bd33923e4d7af7ef5deed
 
 build:
   noarch: python
