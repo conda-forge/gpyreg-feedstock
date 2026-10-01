@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,10 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.5.1
-    - numdifftools >=0.9.41
     - numpy >=1.22.1
-    - pytest >=6.2.5
-    - pytest-rerunfailures >=10.2
     - scipy >=1.7.3
 
 test:
